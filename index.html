@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>Johann Sebastian Schicho</title>
     <style>
         * {
@@ -15,8 +18,10 @@
         body {
             background-color: #fafafa;
             color: #191919;
-            font-family: 'Helvetica Neue', 'Arial', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Helvetica Neue', "Inter", sans-serif;
+            font-optical-sizing: auto;
             font-size: clamp(1rem, 2.5vw, 1.25rem);
+            font-style: normal;
             line-height: 1.6;
             padding: 4rem;
             max-width: 1200px;
@@ -29,15 +34,12 @@
         }
 
         main {
-            max-width: 50%;
-            text-align: justify;
-            text-justify: inter-word;
+            max-width: 55%;
         }
 
         h1 {
-            font-size: clamp(3rem, 10vw, 6rem);
-            font-weight: 400;
-            letter-spacing: -0.02em;
+            font-size: clamp(4rem, 14vw, 7.5rem);
+            font-weight: 600;
             line-height: 1.1;
             margin-bottom: 0;
         }
