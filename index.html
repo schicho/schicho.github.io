@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <title>Johann Sebastian Schicho</title>
     <style>
         * {
@@ -33,15 +35,26 @@
             margin-bottom: 8rem;
         }
 
-        main {
-            max-width: 55%;
-        }
-
         h1 {
             font-size: clamp(4rem, 14vw, 7.5rem);
             font-weight: 600;
             line-height: 1.1;
             margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: clamp(1.25rem, 3vw, 1.4rem);
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 0.9rem;
+        }
+
+        .lhs-half {
+            max-width: 55%;
+        }
+
+        .rhs {
+            text-align: right;
         }
 
         a {
@@ -58,7 +71,6 @@
 
         nav {
             margin-top: 4rem;
-            text-align: right;
         }
 
         nav ul {
@@ -76,17 +88,10 @@
                 margin-bottom: 8rem;
             }
 
-            main {
-                max-width: 90%;
+            .lhs-half {
+                max-width: 80%;
             }
 
-            nav {
-                margin-top: 4rem;
-            }
-
-            nav li {
-                margin-bottom: 0.5rem;
-            }
         }
 
         @media (max-width: 480px) {
@@ -96,7 +101,11 @@
 
             header {
                 margin-top: 1rem;
-                margin-bottom: 3rem;
+                margin-bottom: 5rem;
+            }
+
+            .lhs-half {
+                max-width: 80%;
             }
         }
     </style>
@@ -108,22 +117,23 @@
     </header>
 
     <main>
-        <p># About</p>
-        <p>I'm a master student at TU Wien studying Computer Science.
-            Currently I am employed at TU Wien at the research unit for Algorithms and Complexity.
-            Previously I worked at the Cyber Security Red Team at Infineon Technologies in Munich.</p>
+        <section class="lhs-half">
+            <h2># About</h2>
+            <p>I'm a master student at TU Wien studying Computer Science.
+                Currently I am employed at TU Wien at the research unit for Algorithms and Complexity.
+                Previously I worked at the Cyber Security Red Team at Infineon Technologies in Munich.</p>
+        </section>
+        <nav class="rhs">
+            <h2># Links</h2>
+            <ul>
+                <li><a href="https://linkedin.com/in/schicho">linkedin.com/in/schicho</a></li>
+                <li><a href="https://github.com/schicho">github.com/schicho</a></li>
+                <li><a href="https://schicho.github.io/openmensarss/">OpenMensa RSS</a></li>
+                <li><a href="https://schicho.github.io/steffim/">Steffim</a>
+                </li>
+            </ul>
+        </nav>
     </main>
-
-    <nav>
-        <p># Links</p>
-        <ul>
-            <li><a href="https://linkedin.com/in/schicho">linkedin.com/in/schicho</a></li>
-            <li><a href="https://github.com/schicho">github.com/schicho</a></li>
-            <li><a href="https://schicho.github.io/openmensarss/">OpenMensa RSS</a></li>
-            <li><a href="https://schicho.github.io/steffim/">Steffim</a>
-            </li>
-        </ul>
-    </nav>
 </body>
 
 </html>
