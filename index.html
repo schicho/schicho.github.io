@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" vocab="https://schema.org/">
 
 <head>
     <meta charset="UTF-8">
@@ -10,22 +10,31 @@
     <title>Johann Sebastian Schicho</title>
 </head>
 
-<body>
+<body typeof="Person">
     <header>
-        <h1>Johann Sebastian<br>Schicho</h1>
+        <h1><span property="name">Johann Sebastian<br>Schicho</span></h1>
     </header>
 
     <main>
         <section class="lhs-half">
-            <p>I'm a master student at TU Wien studying Computer Science.
-                Currently I am employed at TU Wien at the research unit for Algorithms and Complexity.
-                Previously I worked at the Cyber Security Red Team at Infineon Technologies in Munich.</p>
+            <p property="description">I'm a <span property="jobTitle">master student</span> at
+                <span property="alumniOf" typeof="CollegeOrUniversity"><span property="name">TU Wien</span></span>
+                studying Computer Science.
+                Currently I am employed at
+                <span property="worksFor" typeof="Organization"><span property="name">TU Wien</span>
+                    <span property="department">Research Unit for Algorithms and Complexity</span></span>.
+                Previously I worked at
+                <span property="worksFor" typeof="Organization"><span property="name">Infineon Technologies</span>
+                    <span property="department">Cyber Security Red Team</span></span> in Munich.
+            </p>
         </section>
         <nav class="rhs">
             <ul>
-                <li><a href="https://linkedin.com/in/schicho">linkedin.com/in/schicho</a></li>
-                <li><a href="https://github.com/schicho">github.com/schicho</a></li>
-                <li><a href="https://orcid.org/0009-0001-5131-4080">orcid.org/0009-0001-5131-4080</a></li>
+                <li><a rel="me" property="sameAs" href="https://linkedin.com/in/schicho">linkedin.com/in/schicho</a>
+                </li>
+                <li><a rel="me" property="sameAs" href="https://github.com/schicho">github.com/schicho</a></li>
+                <li><a rel="me" property="sameAs"
+                        href="https://orcid.org/0009-0001-5131-4080">orcid.org/0009-0001-5131-4080</a></li>
                 <li><a href="https://schicho.github.io/openmensarss/">OpenMensa RSS</a></li>
                 <li><a href="https://schicho.github.io/steffim/">Steffim</a></li>
                 <li><a href="https://schicho.github.io/fahrstiege/">Fahrstiege</a></li>
