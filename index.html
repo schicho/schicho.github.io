@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" vocab="https://schema.org/">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,34 +8,59 @@
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75'>🐸</text></svg>">
     <link rel="stylesheet" href="https://schicho.github.io/shared/style.css">
     <title>Johann Sebastian Schicho</title>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Johann Sebastian Schicho",
+        "jobTitle": "Software Engineer",
+        "url": "https://schicho.github.io",
+        "description": "I'm a master student at TU Wien studying Computer Science. Currently I am employed at TU Wien Research Unit for Algorithms and Complexity. Previously I worked at Infineon Technologies Cyber Security Red Team in Munich.",
+        "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "TU Wien"
+        },
+        "worksFor": [
+            {
+                "@type": "Organization",
+                "name": "TU Wien",
+                "department": "Research Unit for Algorithms and Complexity"
+            },
+            {
+                "@type": "Organization",
+                "name": "Infineon Technologies",
+                "department": "Cyber Security Red Team"
+            }
+        ],
+        "sameAs": [
+            "https://linkedin.com/in/schicho",
+            "https://github.com/schicho",
+            "https://orcid.org/0009-0001-5131-4080"
+        ]
+    }
+    </script>
 </head>
 
-<body typeof="Person">
+<body>
     <header>
-        <h1><span property="name">Johann Sebastian<br>Schicho</span></h1>
+        <h1>Johann Sebastian<br>Schicho</h1>
     </header>
 
     <main>
         <section class="lhs-half">
-            <p property="description">I'm a <span property="jobTitle">master student</span> at
-                <span property="alumniOf" typeof="CollegeOrUniversity"><span property="name">TU Wien</span></span>
-                studying Computer Science.
-                Currently I am employed at
-                <span property="worksFor" typeof="Organization"><span property="name">TU Wien</span>
-                    <span property="department">Research Unit for Algorithms and Complexity</span></span>.
-                Previously I worked at
-                <span property="worksFor" typeof="Organization"><span property="name">Infineon Technologies</span>
-                    <span property="department">Cyber Security Red Team</span></span> in Munich.
+            <p>
+                I'm a master student at TU Wien studying Computer Science.
+                Currently I am employed at TU Wien Research Unit for Algorithms and Complexity.
+                Previously I worked at Infineon Technologies Cyber Security Red Team in Munich.
             </p>
         </section>
         <section class="rhs">
             <nav>
                 <ul>
-                    <li><a rel="me" property="sameAs" href="https://linkedin.com/in/schicho">linkedin.com/in/schicho</a>
+                    <li><a rel="me" href="https://linkedin.com/in/schicho">linkedin.com/in/schicho</a>
                     </li>
-                    <li><a rel="me" property="sameAs" href="https://github.com/schicho">github.com/schicho</a></li>
-                    <li><a rel="me" property="sameAs"
-                            href="https://orcid.org/0009-0001-5131-4080">orcid.org/0009-0001-5131-4080</a></li>
+                    <li><a rel="me" href="https://github.com/schicho">github.com/schicho</a></li>
+                    <li><a rel="me" href="https://orcid.org/0009-0001-5131-4080">orcid.org/0009-0001-5131-4080</a></li>
                 </ul>
             </nav>
         </section>
